@@ -1364,3 +1364,62 @@ body {
     object-fit: cover;   /* Estira la imagen para llenar el contenedor */
 }
 
+/* Aplicaciones (inicio) */
+
+.apps .app_card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.apps .app_card a {
+    display: block;
+    text-decoration: none;
+}
+
+.apps .app_card figure {
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.apps .app_card figure img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+}
+
+.apps .app_card:hover figure {
+    transform: translateY(-4px);
+}
+
+.apps .app_card h3 {
+    margin-top: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.apps .app_card h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 6px;
+}
+
+.presentacion-texto {
+    max-width: 80%;
+    margin: 0 auto 40px auto;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .presentacion-texto {
+        max-width: 100%;
+    }
+}
+
