@@ -660,6 +660,79 @@ button {
 
 }
 
+.politicas {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.politicas h3,
+.politicas h4,
+.politicas li {
+    color: #f8eca6;
+    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.politicas h3,
+.politicas h4 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.politicas h3 {
+    font-size: 28px;
+    line-height: 34px;
+    margin: 40px 0 20px;
+}
+
+.politicas h4 {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 32px 0 12px;
+}
+
+.politicas p {
+    color: #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.politicas ul {
+    margin: 0 0 18px 0;
+    padding-left: 28px;
+    list-style: disc;
+}
+
+.politicas li {
+    margin-bottom: 8px;
+}
+
+.politicas .politicas-meta {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media (max-width: 767px) {
+    .politicas {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .politicas h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+
+    .politicas h4 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
 .botontextL p {
     all: unset;
     /* Después de esto, puedes añadir tus propios estilos básicos si lo necesitas */
