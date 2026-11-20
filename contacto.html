@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Contacto</title>
+      <title data-i18n="title.contacto">Contacto</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -36,16 +36,25 @@
       <div class="wrapper">
          <div id="content">
             <section class="slider_section">
-               <div class="banner_main">
-                  <img class="img-centrada" src="images/bg_main_vacia.jpg" alt="#"/>
-               </div>
-               <div class="container text-center" style="padding-top: 80px; ">
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>     
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
-                  
-               </div>
+   <div class="banner_main" style="position: relative;">
+      <img class="img-centrada" src="images/bg_main_vacia.jpg" alt="#"/>
+      <button type="button" class="btn btn-outline-light lang-btn" id="langBtn" style="position: absolute; right: 20px; top: 20px; min-width: auto;">
+        <span id="langFlag">ES</span>
+        <div id="langMenu" class="lang-menu">
+          <div class="lang-option" onclick="setLang('es')"><span class="lang-flag">ES</span><span class="lang-name">Español</span></div>
+          <div class="lang-option" onclick="setLang('en')"><span class="lang-flag">EN</span><span class="lang-name">English</span></div>
+        </div>
+      </button>
+   </div>
+               <div class="container d-flex justify-content-between align-items-center" style="padding-top: 80px; ">
+                    <div class="d-flex justify-content-center" style="flex: 1;">
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.inicio" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.hardware" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.contacto" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.politicas" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
+                    </div>
+
+                </div>
             </section>
          <div id="game" class="casino">
             <div class="container">
@@ -53,13 +62,15 @@
                   <div class="col-md-12">
                      <div class="titlepage">
 
-                        <h2>Serah Rodriguez Adell</h2>
+                        <h2 data-i18n="contacto.h2">Serah Rodríguez Adell</h2>
 
                      </div>
                   </div>
                </div>
                <div class="row justify-content-center" >
-                        <p class="textfrase" style="max-width: 80%;">hola, me llamo Serah <br>esto es mi pagina web aqui puedes ver mi portafolios o info de mis proyectos <br>aqui almacenare todo lo que hago pues soy una apasionada de la informatica</p>
+                        <p class="textfrase" style="max-width: 80%;" data-i18n="contacto.p.intro1">Hola, me llamo Serah</p>
+                         <p class="textfrase" style="max-width: 80%;" data-i18n="contacto.p.intro2">Esta es mi página web; aquí puedes ver mi portafolio o información sobre mis proyectos</p>
+                         <p class="textfrase" style="max-width: 80%;" data-i18n="contacto.p.intro3">Aquí almacenaré todo lo que hago, pues soy una apasionada de la informática</p>
                </div>
                <div class="row justify-content-center" style="padding-top: 20px;">
 
@@ -70,10 +81,10 @@
                      
 
                   <div class="titlepage" style="padding-top: 40px;">
-                        <h3>Datos de contacto</h3>
-                        <p>Telefono: (+34) 686 43 42 94</p>
-                        <p>Correo: superoadev@gmail.com</p>
-                        <button type="button" class="btn btn-outline-light2 mx-3" style="margin-top: 20px;" onclick="window.open('descargas/CV.pdf', '_blank')">Descargar CV</button>
+                        <h3 data-i18n="contacto.h3.contactodatos">Datos de contacto</h3>
+                        <p data-i18n="contacto.p.telefono">Teléfono: (+34) 686 43 42 94</p>
+                        <p data-i18n="contacto.p.correo">Correo: superoadev@gmail.com</p>
+                        <button type="button" class="btn btn-outline-light2 mx-3" data-i18n="contacto.btn.descargarcv" style="margin-top: 20px;" onclick="window.open('descargas/CV.pdf', '_blank')">Descargar CV</button>
                   </div>
                </div>
                
@@ -87,9 +98,9 @@
             <div class="footer"> 
                <div class="copyright">
                   <div class="container">
-                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">HTML Design</a>, 
-                        bajo licencia <a href="https://creativecommons.org">CC BY 4.0</a>. 
-                        Modificado por Serah Rodríguez Adell.
+                     <p><span data-i18n="footer.copyright1">Copyright 2019 All Rights Reserved By </span><a href="https://html.design/">HTML Design</a>, 
+                        <span data-i18n="footer.copyright2">bajo licencia </span><a href="https://creativecommons.org">CC BY 4.0</a>. 
+                        <span data-i18n="footer.copyright3">. Modificado por </span>Serah Rodríguez Adell.
                      </p>
                   </div>
                </div>

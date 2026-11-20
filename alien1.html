@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>LOST DARKNESS 1</title>
+      <title data-i18n="title.alien1">LOST DARKNESS 1</title>
       <meta name="keywords" content="LOST DARKNESS 1, descarga no disponible">
       <meta name="description" content="La descarga de LOST DARKNESS 1 no está disponible en este momento.">
       <meta name="author" content="">
@@ -36,16 +36,25 @@
       <div class="wrapper">
          <div id="content">
             <section class="slider_section">
-               <div class="banner_main">
-                  <img class="img-centrada" src="images/bg_main1.jpg" alt="#"/>
-               </div>
-               <div class="container text-center" style="padding-top: 80px; ">
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>     
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
-                  
-               </div>
+   <div class="banner_main" style="position: relative;">
+      <img class="img-centrada" src="images/bg_main1.jpg" alt="#"/>
+      <button type="button" class="btn btn-outline-light lang-btn" id="langBtn" style="position: absolute; right: 20px; top: 20px; min-width: auto;">
+        <span id="langFlag">ES</span>
+        <div id="langMenu" class="lang-menu">
+          <div class="lang-option" onclick="setLang('es')"><span class="lang-flag">ES</span><span class="lang-name">Español</span></div>
+          <div class="lang-option" onclick="setLang('en')"><span class="lang-flag">EN</span><span class="lang-name">English</span></div>
+        </div>
+      </button>
+   </div>
+               <div class="container d-flex justify-content-between align-items-center" style="padding-top: 80px; ">
+                    <div class="d-flex justify-content-center" style="flex: 1;">
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.inicio" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.hardware" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.contacto" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.politicas" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
+                    </div>
+
+                </div>
             </section>
                <div id="game" class="casino">
                   
@@ -70,7 +79,11 @@
 
                               </div>
                               <div class="game3 center" style="margin-top: 80px;width: 50%;margin: auto; padding: 10px 10px 10px 10px;     " >
-                              <p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;">LOST DARKNESS Episodio 1: Espacio Profundo seguirá la aventura de regreso a casa de nuestro protagonista.<br>En un universo al borde del colapso un tu tomaras el control de un astronomo retirado <br>confio en la persona equivocada y ahora le persigue un cientifico genocida <br>por culpa de este quedo a la deriva en un asteroide donde se ubica un templo perteneciente a unas entidades arcanas <br>pero tu unico objetivo sera salir de aqui volver a casa</p>
+                              <p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien1.p.desc1">LOST DARKNESS Episodio 1: Espacio Profundo seguirá la aventura de regreso a casa de nuestro protagonista.</p>
+<p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien1.p.desc2">En un universo al borde del colapso, tomarás el control de un astrónomo retirado</p>
+<p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien1.p.desc3">Confiaste en la persona equivocada y ahora te persigue un científico genocida</p>
+<p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien1.p.desc4">Por culpa de él, quedas a la deriva en un asteroide donde se ubica un templo perteneciente a unas entidades arcanas</p>
+<p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien1.p.desc5">pero tu único objetivo será salir de aquí y volver a casa</p>
                               </div>
 
                               
@@ -105,7 +118,7 @@
                   </div>
                   <div class="container">
                   <div class="text-center" style="padding-top: 80px;">
-                     <button type="button" class="btn btn-outline-light" onclick="window.location.href='index.html'">Atrás</button>
+                     <button type="button" class="btn btn-outline-light" data-i18n="alien1.btn.atras" onclick="window.location.href='index.html'">Atrás</button>
                   </div>
                </div>
 
@@ -117,9 +130,9 @@
             <div class="footer"> 
                <div class="copyright">
                   <div class="container">
-                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">HTML Design</a>, 
-                        bajo licencia <a href="https://creativecommons.org">CC BY 4.0</a>. 
-                        Modificado por Serah Rodríguez Adell.
+                     <p><span data-i18n="footer.copyright1">Copyright 2019 All Rights Reserved By </span><a href="https://html.design/">HTML Design</a>, 
+                        <span data-i18n="footer.copyright2">bajo licencia </span><a href="https://creativecommons.org">CC BY 4.0</a>. 
+                        <span data-i18n="footer.copyright3">. Modificado por </span>Serah Rodríguez Adell.
                      </p>
                   </div>
                </div>

@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>LOST DARKNESS</title>
+      <title data-i18n="title.lostdarkness">LOST DARKNESS</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -36,8 +36,15 @@
       <div class="wrapper">
          <div id="content">
             <section class="slider_section">
-               <div class="banner_main">
-                  <img class="img-centrada" src="images/bg_main.jpg" alt="#"/>
+   <div class="banner_main" style="position: relative;">
+      <img class="img-centrada" src="images/bg_main.jpg" alt="#"/>
+      <button type="button" class="btn btn-outline-light lang-btn" id="langBtn" style="position: absolute; right: 20px; top: 20px; min-width: auto;">
+        <span id="langFlag">ES</span>
+        <div id="langMenu" class="lang-menu">
+          <div class="lang-option" onclick="setLang('es')"><span class="lang-flag">ES</span><span class="lang-name">Español</span></div>
+          <div class="lang-option" onclick="setLang('en')"><span class="lang-flag">EN</span><span class="lang-name">English</span></div>
+        </div>
+      </button>
                   <div class="container-fluid padding3">
                      <div class="row">
                         <div class="col-md-12">
@@ -46,13 +53,15 @@
                      </div>
                   </div>
                </div>
-               <div class="container text-center" style="padding-top: 80px; ">
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
-                  
-               </div>
+               <div class="container d-flex justify-content-between align-items-center" style="padding-top: 80px; ">
+                    <div class="d-flex justify-content-center" style="flex: 1;">
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.inicio" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.hardware" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.contacto" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.politicas" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
+                    </div>
+
+                </div>
             </section>
          <div id="game" class="casino">
             <div class="container">
@@ -60,7 +69,7 @@
                   <div class="col-md-12">
                      
                      <div class="titlepage">
-                        <h2>LOST DARKNESS</h2>
+                        <h2 data-i18n="lostdarkness.h2">LOST DARKNESS</h2>
                         <span></span>
 
                        
@@ -74,7 +83,7 @@
                         <figure><img src="images/game1.jpg" alt="#"/></figure>
                      </div>
                      <div class="game2">
-                        <h3>EPISODIO 1: Espacio Profundo</h3>
+                        <h3 data-i18n="lostdarkness.h3.ep1">EPISODIO 1: Espacio Profundo</h3>
                      </div>
                   </div>
                   <div class="col-md-4 padding_bottom1">
@@ -82,7 +91,7 @@
                         <figure><img src="images/game2.jpg" alt="#"/></figure>
                      </div>
                      <div class="game2">
-                        <h3>EPISODIO 2: Regreso a Casa</h3>
+                        <h3 data-i18n="lostdarkness.h3.ep2">EPISODIO 2: Regreso a Casa</h3>
                      </div>
                   </div>
                   <div class="col-md-4 padding_bottom1">
@@ -90,7 +99,7 @@
                         <figure><img src="images/game3.jpg" alt="#"/></figure>
                      </div>
                      <div class="game2">
-                        <h3>EPISODIO 3: Héroe en Ascenso</h3>
+                        <h3 data-i18n="lostdarkness.h3.ep3">EPISODIO 3: Héroe en Ascenso</h3>
                      </div>
                   </div>
                   <div class="col-md-4 margin_bottom1">
@@ -98,7 +107,7 @@
                         <figure><img src="images/game4.jpg" alt="#"/></figure>
                      </div>
                      <div class="game2">
-                        <h3>Exploración</h3>
+                        <h3 data-i18n="lostdarkness.h3.exploracion">Exploración</h3>
                      </div>
                   </div>
                   <div class="col-md-4 margin_bottom1">
@@ -106,7 +115,7 @@
                         <figure><img src="images/game5.jpg" alt="#"/></figure>
                      </div>
                      <div class="game2">
-                        <h3>Diferentes Mundos</h3>
+                        <h3 data-i18n="lostdarkness.h3.mundos">Diferentes Mundos</h3>
                      </div>
                   </div>
                   <div class="col-md-4">
@@ -114,7 +123,7 @@
                         <figure><img src="images/game6.jpg" alt="#"/></figure>
                      </div>
                      <div class="game2">
-                        <h3>Jefes</h3>
+                        <h3 data-i18n="lostdarkness.h3.jefes">Jefes</h3>
                      </div>
                   </div>
                </div>
@@ -125,9 +134,9 @@
                <div class="row">
                   <div id="about" class="col-md-12">
                      <ul class="spinit">
-                        <li><a href="alien1.html" class="btn2 btn-demo">Info LOST DARKNESS EP:1</a></li>
-                        <li><a href="alien2.html" class="btn2 btn-demo">Info LOST DARKNESS EP:2</a></li>
-                        <li><a href="alien3.html" class="btn2 btn-demo">Info LOST DARKNESS EP:3</a></li>
+                        <li><a href="alien1.html" class="btn2 btn-demo" data-i18n="lostdarkness.li.ep1">Info LOST DARKNESS EP:1</a></li>
+                        <li><a href="alien2.html" class="btn2 btn-demo" data-i18n="lostdarkness.li.ep2">Info LOST DARKNESS EP:2</a></li>
+                        <li><a href="alien3.html" class="btn2 btn-demo" data-i18n="lostdarkness.li.ep3">Info LOST DARKNESS EP:3</a></li>
                      </ul>
                      <div class="two_box">
                         <div class="row d_flex">
@@ -146,7 +155,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="titlepage">
-                        <h2>Una Aventura Espacial</h2>
+                        <h2 data-i18n="lostdarkness.h2.aventura">Una Aventura Espacial</h2>
                         <span></span>
                      </div>
                   </div>
@@ -157,29 +166,23 @@
                      
                         <div style="min-width: 300px ; padding-top: 100px;">
                            <a href="https://mentalhelldev.itch.io/the-alien-adeventure-launcher-demo" download class="btn2 btn-success2" style="min-width: 300px ;max-height: 70px ;text-justify:auto;">
-                              <p class="center justify-content-center " style="display: flex; align-items: center; height: 50px; ">Descargar del juego</p>
+                              <p class="center justify-content-center " style="display: flex; align-items: center; height: 50px; " data-i18n="lostdarkness.p.descargar">Descargar el juego</p>
                            </a>         
                         </div>
                         <div class="center justify-content-center " style="display: flex; align-items: center; height: 50px; color:white;padding-top: 100px; text-size-adjust: 30px;">
-                           <h3 style="color:white">
-                              Seran 3 episodios de gran aventura epica<br>
+                           <h3 style="color:white" data-i18n="lostdarkness.h3.tresepisodios">
+                               Serán 3 episodios de gran aventura épica<br>
                               
                            </h3>
                      </div>
                         <div  class="center justify-content-center " style="display: flex; align-items: center; height: 50px; color:white;padding-top: 100px; ">
-                        <p>
-                           Lucharás con diferentes amenazas y viajarás por diferentes mundos<br>
-                           a lo largo de los 3 episodios que durará la Historia.
-                        </p>
+<p><span data-i18n="lostdarkness.p.historia">Te enfrentarás a diferentes amenazas y viajarás por diferentes mundos a lo largo de los 3 episodios que durará la historia.</span></p>
                      </div>
                         <div class="customer_text">
                            <div class="customer_box">
                               <i><img src="images/customer.png" alt="#"/></i>
-                              <h4>Mental Hell</h4>
-                              <span>
-                                 Serah Rodríguez Adell<br>
-                                 
-                              </span>
+                              <h4 data-i18n="lostdarkness.h4.mentalhell">Mental Hell</h4>
+<span data-i18n="lostdarkness.span.serah">Serah Rodríguez Adell</span><br><br>
                               <span class="email">
                                  superoad2001@gmail.com
                               </span>
@@ -193,9 +196,9 @@
             <div class="footer"> 
                <div class="copyright">
                   <div class="container">
-                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">HTML Design</a>, 
-                        bajo licencia <a href="https://creativecommons.org">CC BY 4.0</a>. 
-                        Modificado por Serah Rodríguez Adell.
+                     <p><span data-i18n="footer.copyright1">Copyright 2019 All Rights Reserved By </span><a href="https://html.design/">HTML Design</a>, 
+                        <span data-i18n="footer.copyright2">bajo licencia </span><a href="https://creativecommons.org">CC BY 4.0</a>. 
+                        <span data-i18n="footer.copyright3">. Modificado por </span>Serah Rodríguez Adell.
                      </p>
                   </div>
                </div>

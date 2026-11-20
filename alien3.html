@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>LOST DARKNESS 3</title>
+      <title data-i18n="title.alien3">LOST DARKNESS 3</title>
       <meta name="keywords" content="LOST DARKNESS 3, descarga no disponible">
       <meta name="description" content="La descarga de LOST DARKNESS 3 no está disponible en este momento.">
       <meta name="author" content="">
@@ -36,16 +36,25 @@
       <div class="wrapper">
          <div id="content">
             <section class="slider_section">
-               <div class="banner_main">
-                  <img class="img-centrada" src="images/bg_main3.jpg" alt="#"/>
-               </div>
-               <div class="container text-center" style="padding-top: 80px; ">
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>     
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
-                  
-               </div>
+   <div class="banner_main" style="position: relative;">
+      <img class="img-centrada" src="images/bg_main3.jpg" alt="#"/>
+      <button type="button" class="btn btn-outline-light lang-btn" id="langBtn" style="position: absolute; right: 20px; top: 20px; min-width: auto;">
+        <span id="langFlag">ES</span>
+        <div id="langMenu" class="lang-menu">
+          <div class="lang-option" onclick="setLang('es')"><span class="lang-flag">ES</span><span class="lang-name">Español</span></div>
+          <div class="lang-option" onclick="setLang('en')"><span class="lang-flag">EN</span><span class="lang-name">English</span></div>
+        </div>
+      </button>
+   </div>
+               <div class="container d-flex justify-content-between align-items-center" style="padding-top: 80px; ">
+                    <div class="d-flex justify-content-center" style="flex: 1;">
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.inicio" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.hardware" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.contacto" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.politicas" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
+                    </div>
+
+                </div>
             </section>
 
 
@@ -72,7 +81,9 @@
 
                               </div>
                               <div class="game3 center" style="margin-top: 80px;width: 50%;margin: auto; padding: 10px 10px 10px 10px;     " >
-                              <p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;">La aventura de LOST DARKNESS Episodio 3: viaje del heroe ocurrira 10 años despues de el anterior episodio.<br>¿este pondra punto final a la historia de 3 episodios desvelando el misterio de los antiguos finalmente,tal vez descubran un gran secreto pero no es oro todo lo que reluce <br> tampoco es real todo lo que crees</p>
+                              <p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien3.p.desc1">La aventura de LOST DARKNESS Episodio 3: Viaje del héroe ocurrirá 10 años después del episodio anterior.</p>
+<p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien3.p.desc2">¿Este pondrá punto final a la historia de 3 episodios desvelando finalmente el misterio de los antiguos? Tal vez descubran un gran secreto, pero no es oro todo lo que reluce</p>
+<p class="game4" style="padding-top: 30px; font-size: clamp(6px, 3vw, 20px); line-height: 1.5;" data-i18n="alien3.p.desc3">Tampoco es real todo lo que crees.</p>
                               </div>
 
                               
@@ -107,7 +118,7 @@
                   </div>
                   <div class="container">
                   <div class="text-center" style="padding-top: 80px;">
-                     <button type="button" class="btn btn-outline-light" onclick="window.location.href='index.html'">Atrás</button>
+                     <button type="button" class="btn btn-outline-light" data-i18n="alien3.btn.atras" onclick="window.location.href='index.html'">Atrás</button>
                   </div>
                </div>
          
@@ -116,9 +127,9 @@
             <div class="footer"> 
                <div class="copyright">
                   <div class="container">
-                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">HTML Design</a>, 
-                        bajo licencia <a href="https://creativecommons.org">CC BY 4.0</a>. 
-                        Modificado por Serah Rodríguez Adell.
+                     <p><span data-i18n="footer.copyright1">Copyright 2019 All Rights Reserved By </span><a href="https://html.design/">HTML Design</a>, 
+                        <span data-i18n="footer.copyright2">bajo licencia </span><a href="https://creativecommons.org">CC BY 4.0</a>. 
+                        <span data-i18n="footer.copyright3">. Modificado por </span>Serah Rodríguez Adell.
                      </p>
                   </div>
                </div>

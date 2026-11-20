@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Aplicaciones | Mental Hell</title>
+      <title data-i18n="title.index">Aplicaciones | Mental Hell</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -33,69 +33,84 @@
       <div class="wrapper">
          <div id="content">
             <section class="slider_section">
-               <div class="banner_main">
-                  <img class="img-centrada" src="images/bg_main_vacia.jpg" alt="#"/>
-               </div>
-               <div class="container text-center" style="padding-top: 80px; ">
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
-               
-               </div>
-            </section>
-         <div id="game" class="casino apps">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>Aplicaciones</h2>
-                        <span></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="row justify-content-center">
-                  <div class="col-6 col-md-4 app_card">
-                     <a href="lostdarkness.html">
-                        <figure><img src="images/icon_lost_darkness.png" alt="LOST DARKNESS"/></figure>
-                        <h3>LOST DARKNESS</h3>
-                        <h4>Videojuego · Antología de 3 episodios</h4>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
+   <div class="banner_main" style="position: relative;">
+      <img class="img-centrada" src="images/bg_main_vacia.jpg" alt="#"/>
+      <button type="button" class="btn btn-outline-light lang-btn" id="langBtn" style="position: absolute; right: 20px; top: 20px; min-width: auto;">
+        <span id="langFlag">ES</span>
+        <div id="langMenu" class="lang-menu">
+          <div class="lang-option" onclick="setLang('es')"><span class="lang-flag">ES</span><span class="lang-name">Español</span></div>
+          <div class="lang-option" onclick="setLang('en')"><span class="lang-flag">EN</span><span class="lang-name">English</span></div>
+        </div>
+      </button>
+   </div>
+               <div class="container d-flex justify-content-between align-items-center" style="padding-top: 80px; ">
+                    <div class="d-flex justify-content-center" style="flex: 1;">
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.inicio" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.hardware" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.contacto" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.politicas" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
+                    </div>
 
+                </div>
+            </section>
          <div class="licens">
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
                      <div class="titlepage">
-                        <h2>Presentación</h2>
+                        <h2 data-i18n="index.h2.presentacion">Presentación</h2>
                         <span></span>
                      </div>
                   </div>
                </div>
                <div class="row justify-content-center">
                   <div class="col-md-10">
-                     <p class="textfrase presentacion-texto">
+                     <p class="textfrase presentacion-texto" data-i18n="index.p.presentacion">
                         Mental Hell es un estudio independiente de desarrollo de videojuegos y software
                         dirigido por Serah Rodríguez Adell. En esta web se reúnen las aplicaciones y
-                        proyectos publicados, junto con información sobre el hardware y los sistemas
-                        utilizados en su desarrollo. El objetivo es crear experiencias accesibles,
+                        proyectos publicados. El objetivo es crear experiencias accesibles,
                         cuidadas y con una identidad propia.
                      </p>
                   </div>
                </div>
             </div>
          </div>
+
+         <div id="game" class="casino apps">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="titlepage">
+                        <h2 data-i18n="index.h2.apps">Aplicaciones</h2>
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="row justify-content-center">
+                   <div class="col-6 col-md-4 app_card">
+                      <a href="lostdarkness.html">
+                         <figure><img src="images/icon_lost_darkness.png" alt="LOST DARKNESS"/></figure>
+<h3 data-i18n="index.app.lostdarkness.title">LOST DARKNESS</h3>
+                          <h4 data-i18n="index.app.lostdarkness.subtitle">Videojuego · Antología de 3 episodios</h4>
+                      </a>
+                   </div>
+                   <div class="col-6 col-md-4 app_card">
+                      <a href="tid-activity-manager.html">
+                          <figure><img src="images/icotidact2.png" alt="TID Activity Manager"/></figure>
+<h3 data-i18n="index.app.tid.title">TID Activity Manager</h3>
+                          <h4 data-i18n="index.app.tid.subtitle">Aplicación para la gestión del sistema de personas con TID</h4>
+                      </a>
+                   </div>
+               </div>
+           </div>
+        </div>
          <footer>
             <div class="footer"> 
                <div class="copyright">
                   <div class="container">
-                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">HTML Design</a>, 
-                        bajo licencia <a href="https://creativecommons.org">CC BY 4.0</a>. 
-                        Modificado por Serah Rodríguez Adell.
+                     <p><span data-i18n="footer.copyright1">Copyright 2019 All Rights Reserved By </span><a href="https://html.design/">HTML Design</a>, 
+                        <span data-i18n="footer.copyright2">bajo licencia </span><a href="https://creativecommons.org">CC BY 4.0</a>. 
+                        <span data-i18n="footer.copyright3">. Modificado por </span>Serah Rodríguez Adell.
                      </p>
                   </div>
                </div>

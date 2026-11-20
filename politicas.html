@@ -8,7 +8,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Polticas de privacidad</title>
+      <title data-i18n="title.politicas">Políticas de privacidad</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -36,16 +36,25 @@
       <div class="wrapper">
          <div id="content">
             <section class="slider_section">
-               <div class="banner_main">
-                  <img class="img-centrada" src="images/bg_main_vacia.jpg" alt="#"/>
-               </div>
-               <div class="container text-center" style="padding-top: 80px; ">
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>     
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
-                     <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
-                      <button type="button" class="btn btn-outline-light mx-3" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
-                  
-               </div>
+   <div class="banner_main" style="position: relative;">
+      <img class="img-centrada" src="images/bg_main_vacia.jpg" alt="#"/>
+      <button type="button" class="btn btn-outline-light lang-btn" id="langBtn" style="position: absolute; right: 20px; top: 20px; min-width: auto;">
+        <span id="langFlag">ES</span>
+        <div id="langMenu" class="lang-menu">
+          <div class="lang-option" onclick="setLang('es')"><span class="lang-flag">ES</span><span class="lang-name">Español</span></div>
+          <div class="lang-option" onclick="setLang('en')"><span class="lang-flag">EN</span><span class="lang-name">English</span></div>
+        </div>
+      </button>
+   </div>
+               <div class="container d-flex justify-content-between align-items-center" style="padding-top: 80px; ">
+                    <div class="d-flex justify-content-center" style="flex: 1;">
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.inicio" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='index.html'">Inicio</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.hardware" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='portafolios.html'">Hardware y Sistemas</button>
+                     <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.contacto" style="min-width: 250px;margin-top: 20px;" onclick="window.location.href='contacto.html'">Contacto</button>
+                      <button type="button" class="btn btn-outline-light mx-3" data-i18n="nav.politicas" style="min-width: 250px; margin-top: 20px;" onclick="window.location.href='politicas.html'">Políticas</button>
+                    </div>
+
+                </div>
             </section>
          <div id="game" class="casino">
             <div class="container">
@@ -53,7 +62,7 @@
                   <div class="col-md-12">
                      <div class="titlepage">
 
-                        <h2>Polticas de privacidad</h2>
+                        <h2 data-i18n="politicas.h2">Políticas de privacidad</h2>
 
                      </div>
                   </div>
@@ -62,126 +71,132 @@
    <div class="col-md-12">
       <div class="textfrase politicas">
 
-         <h3>POLÍTICA GENERAL DE PRIVACIDAD</h3>
-         <p>Aplicaciones, programas informáticos y videojuegos</p>
+         <h3 data-i18n="politicas.h3.general">POLÍTICA GENERAL DE PRIVACIDAD</h3>
+         <p data-i18n="politicas.p.aplicaciones">Aplicaciones, programas informáticos y videojuegos</p>
 
-         <ul class="politicas-meta">
-            <li>Desarrollador / Titular: mentalhelldev</li>
-            <li>Correo electrónico: superoad2001@gmail.com</li>
-            <li>Web oficial: mentalhell.es</li>
-            <li>Versión: 1.0</li>
-            <li>Fecha de publicación: 19/11/2026</li>
-            <li>Fecha de entrada en vigor: 19/11/2026</li>
+          <ul class="politicas-meta">
+             <li data-i18n="politicas.li.titular">Desarrollador / Titular: mentalhelldev</li>
+             <li data-i18n="politicas.li.correo">Correo electrónico: superoad2001@gmail.com</li>
+             <li data-i18n="politicas.li.web">Web oficial: mentalhell.es</li>
+            <li data-i18n="politicas.li.version">Versión: 1.0</li>
+            <li data-i18n="politicas.li.fechaPub">Fecha de publicación: 19/11/2026</li>
+            <li data-i18n="politicas.li.fechaVig">Fecha de entrada en vigor: 19/11/2026</li>
          </ul>
 
-         <h4>1. Ámbito de aplicación</h4>
-         <p>Esta Política de Privacidad establece los principios generales de privacidad aplicables a las aplicaciones, programas informáticos y videojuegos desarrollados y publicados por el titular.</p>
-         <p>Los productos podrán distribuirse y utilizarse, según corresponda a cada versión, mediante diferentes sistemas operativos y plataformas, entre ellos:</p>
+         <h4 data-i18n="politicas.h4.seccion1">1. Ámbito de aplicación</h4>
+         <p data-i18n="politicas.p.s1p1">Esta Política de Privacidad establece los principios generales de privacidad aplicables a las aplicaciones, programas informáticos y videojuegos desarrollados y publicados por el titular.</p>
+         <p data-i18n="politicas.p.s1p2">Los productos podrán distribuirse y utilizarse, según corresponda a cada versión, mediante diferentes sistemas operativos y plataformas, entre ellos:</p>
          <ul>
-            <li>Android.</li>
-            <li>iOS.</li>
-            <li>Windows.</li>
-            <li>Linux.</li>
-            <li>SteamOS.</li>
-            <li>Steam.</li>
-            <li>Otras plataformas de distribución o sistemas operativos compatibles.</li>
+            <li data-i18n="politicas.li.android">Android.</li>
+            <li data-i18n="politicas.li.ios">iOS.</li>
+            <li data-i18n="politicas.li.windows">Windows.</li>
+            <li data-i18n="politicas.li.linux">Linux.</li>
+            <li data-i18n="politicas.li.steamos">SteamOS.</li>
+            <li data-i18n="politicas.li.steam">Steam.</li>
+            <li data-i18n="politicas.li.otras">Otras plataformas de distribución o sistemas operativos compatibles.</li>
          </ul>
-         <p>No todos los productos estarán disponibles en todas las plataformas. Esta política se aplicará exclusivamente al producto y a la versión concreta que el usuario haya descargado, instalado o esté utilizando.</p>
+         <p data-i18n="politicas.p.s1p3">No todos los productos estarán disponibles en todas las plataformas. Esta política se aplicará exclusivamente al producto y a la versión concreta que el usuario haya descargado, instalado o esté utilizando.</p>
 
-         <h4>2. Recopilación de información por el desarrollador</h4>
-         <p>El titular no solicita a los usuarios la creación de cuentas, registros personales ni la facilitación de información identificativa para utilizar sus aplicaciones o videojuegos, salvo que una funcionalidad específica indique expresamente lo contrario.</p>
-         <p>Los productos están diseñados para funcionar sin sistemas propios de recopilación de datos personales, seguimiento de usuarios, elaboración de perfiles o almacenamiento de información personal en servidores del titular.</p>
-         <p>El titular no recopila información personal para fines publicitarios, comerciales, estadísticos o de seguimiento del comportamiento de los usuarios.</p>
+         <h4 data-i18n="politicas.h4.seccion2">2. Recopilación de información por el desarrollador</h4>
+         <p data-i18n="politicas.p.s2p1">El titular no solicita a los usuarios la creación de cuentas, registros personales ni la facilitación de información identificativa para utilizar sus aplicaciones o videojuegos, salvo que una funcionalidad específica indique expresamente lo contrario.</p>
+         <p data-i18n="politicas.p.s2p2">Los productos están diseñados para funcionar sin sistemas propios de recopilación de datos personales, seguimiento de usuarios, elaboración de perfiles o almacenamiento de información personal en servidores del titular.</p>
+         <p data-i18n="politicas.p.s2p3">El titular no recopila información personal para fines publicitarios, comerciales, estadísticos o de seguimiento del comportamiento de los usuarios.</p>
 
-         <h4>3. Ausencia de sistemas propios de telemetría y servidores de recopilación</h4>
-         <p>El titular no utiliza ni mantiene sistemas propios de telemetría, analítica de usuarios, seguimiento, monitorización del comportamiento o recopilación automatizada de información sobre la actividad de los usuarios.</p>
-         <p>Tampoco mantiene servidores propios destinados a recibir o almacenar información personal procedente del funcionamiento ordinario de sus aplicaciones o videojuegos.</p>
-         <p>No se implementan mecanismos propios destinados a identificar a los usuarios, registrar sus hábitos de utilización, elaborar perfiles personales o realizar un seguimiento individualizado.</p>
-         <p>La información que pueda generarse o almacenarse localmente durante el funcionamiento de un producto permanecerá, en su caso, en el dispositivo del usuario, salvo las funcionalidades específicas descritas en esta política.</p>
+         <h4 data-i18n="politicas.h4.seccion3">3. Ausencia de sistemas propios de telemetría y servidores de recopilación</h4>
+         <p data-i18n="politicas.p.s3p1">El titular no utiliza ni mantiene sistemas propios de telemetría, analítica de usuarios, seguimiento, monitorización del comportamiento o recopilación automatizada de información sobre la actividad de los usuarios.</p>
+         <p data-i18n="politicas.p.s3p2">Tampoco mantiene servidores propios destinados a recibir o almacenar información personal procedente del funcionamiento ordinario de sus aplicaciones o videojuegos.</p>
+         <p data-i18n="politicas.p.s3p3">No se implementan mecanismos propios destinados a identificar a los usuarios, registrar sus hábitos de utilización, elaborar perfiles personales o realizar un seguimiento individualizado.</p>
+         <p data-i18n="politicas.p.s3p4">La información que pueda generarse o almacenarse localmente durante el funcionamiento de un producto permanecerá, en su caso, en el dispositivo del usuario, salvo las funcionalidades específicas descritas en esta política.</p>
 
-         <h4>4. Sistemas operativos y plataformas de terceros</h4>
-         <p>Cada producto funciona en el sistema operativo y entorno tecnológico para el que haya sido desarrollado y publicado.</p>
-         <p>En función de la versión utilizada, podrán intervenir plataformas y proveedores independientes como Google, Apple, Microsoft, Valve, proveedores de distribuciones Linux y otros servicios tecnológicos.</p>
-         <p>Estos proveedores pueden recopilar, tratar y almacenar información técnica o de utilización relacionada con sus propios sistemas operativos, dispositivos, tiendas de aplicaciones y plataformas de distribución.</p>
-         <p>Dichos tratamientos se realizan bajo las políticas de privacidad, condiciones de servicio y configuraciones de cada proveedor.</p>
-         <p>El titular no controla ni determina los tratamientos que estos proveedores realizan directamente para el funcionamiento y prestación de sus propios servicios, ni responde de sus operaciones independientes de tratamiento, sin perjuicio de las responsabilidades legales que le correspondan por sus propias actuaciones.</p>
-         <p>La presente política no pretende atribuir al titular la gestión de los datos que las plataformas recopilan por cuenta propia ni eximirlo de las obligaciones que legalmente le correspondan.</p>
+         <h4 data-i18n="politicas.h4.seccion4">4. Sistemas operativos y plataformas de terceros</h4>
+         <p data-i18n="politicas.p.s4p1">Cada producto funciona en el sistema operativo y entorno tecnológico para el que haya sido desarrollado y publicado.</p>
+         <p data-i18n="politicas.p.s4p2">En función de la versión utilizada, podrán intervenir plataformas y proveedores independientes como Google, Apple, Microsoft, Valve, proveedores de distribuciones Linux y otros servicios tecnológicos.</p>
+         <p data-i18n="politicas.p.s4p3">Estos proveedores pueden recopilar, tratar y almacenar información técnica o de utilización relacionada con sus propios sistemas operativos, dispositivos, tiendas de aplicaciones y plataformas de distribución.</p>
+         <p data-i18n="politicas.p.s4p4">Dichos tratamientos se realizan bajo las políticas de privacidad, condiciones de servicio y configuraciones de cada proveedor.</p>
+         <p data-i18n="politicas.p.s4p5">El titular no controla ni determina los tratamientos que estos proveedores realizan directamente para el funcionamiento y prestación de sus propios servicios, ni responde de sus operaciones independientes de tratamiento, sin perjuicio de las responsabilidades legales que le correspondan por sus propias actuaciones.</p>
+         <p data-i18n="politicas.p.s4p6">La presente política no pretende atribuir al titular la gestión de los datos que las plataformas recopilan por cuenta propia ni eximirlo de las obligaciones que legalmente le correspondan.</p>
 
-         <h4>5. Motores de desarrollo y tecnologías utilizadas</h4>
-         <p>Las aplicaciones y videojuegos pueden haber sido desarrollados mediante diferentes tecnologías, motores de programación y herramientas de desarrollo, incluyendo Unity u otros entornos similares.</p>
-         <p>El uso de un motor de desarrollo no implica por sí mismo que el titular recopile información de los usuarios.</p>
-         <p>El titular no utiliza las herramientas de desarrollo para implementar sistemas propios de telemetría, analítica de usuarios o seguimiento de la actividad de los jugadores.</p>
-         <p>Las funcionalidades técnicas de diagnóstico o recopilación de información que puedan estar incorporadas en herramientas externas deberán distinguirse de los mecanismos propios del titular y revisarse antes de habilitarlas en una versión publicada.</p>
+         <h4 data-i18n="politicas.h4.seccion5">5. Motores de desarrollo y tecnologías utilizadas</h4>
+         <p data-i18n="politicas.p.s5p1">Las aplicaciones y videojuegos pueden haber sido desarrollados mediante diferentes tecnologías, motores de programación y herramientas de desarrollo, incluyendo Unity u otros entornos similares.</p>
+         <p data-i18n="politicas.p.s5p2">El uso de un motor de desarrollo no implica por sí mismo que el titular recopile información de los usuarios.</p>
+         <p data-i18n="politicas.p.s5p3">El titular no utiliza las herramientas de desarrollo para implementar sistemas propios de telemetría, analítica de usuarios o seguimiento de la actividad de los jugadores.</p>
+         <p data-i18n="politicas.p.s5p4">Las funcionalidades técnicas de diagnóstico o recopilación de información que puedan estar incorporadas en herramientas externas deberán distinguirse de los mecanismos propios del titular y revisarse antes de habilitarlas en una versión publicada.</p>
 
-         <h4>6. Plataformas de distribución y servicios externos</h4>
-         <p>Algunas aplicaciones y videojuegos pueden distribuirse mediante plataformas como Google Play, Apple App Store o Steam.</p>
-         <p>Estas plataformas pueden proporcionar servicios complementarios, como autenticación, almacenamiento en la nube, sincronización, logros, estadísticas, multijugador y otras funcionalidades.</p>
-         <p>Cuando el usuario utilice servicios prestados directamente por estas plataformas, el tratamiento de información efectuado por ellas estará sujeto a sus respectivas políticas de privacidad y condiciones de servicio.</p>
-         <p>El titular no controla los tratamientos independientes realizados por dichos proveedores fuera de las funcionalidades y tratamientos bajo su responsabilidad.</p>
-         <p>La utilización de estos servicios no implica que el titular disponga de acceso a toda la información que las plataformas puedan recopilar de sus usuarios.</p>
+         <h4 data-i18n="politicas.h4.seccion6">6. Plataformas de distribución y servicios externos</h4>
+         <p data-i18n="politicas.p.s6p1">Algunas aplicaciones y videojuegos pueden distribuirse mediante plataformas como Google Play, Apple App Store o Steam.</p>
+         <p data-i18n="politicas.p.s6p2">Estas plataformas pueden proporcionar servicios complementarios, como autenticación, almacenamiento en la nube, sincronización, logros, estadísticas, multijugador y otras funcionalidades.</p>
+         <p data-i18n="politicas.p.s6p3">Cuando el usuario utilice servicios prestados directamente por estas plataformas, el tratamiento de información efectuado por ellas estará sujeto a sus respectivas políticas de privacidad y condiciones de servicio.</p>
+         <p data-i18n="politicas.p.s6p4">El titular no controla los tratamientos independientes realizados por dichos proveedores fuera de las funcionalidades y tratamientos bajo su responsabilidad.</p>
+         <p data-i18n="politicas.p.s6p5">La utilización de estos servicios no implica que el titular disponga de acceso a toda la información que las plataformas puedan recopilar de sus usuarios.</p>
 
-         <h4>7. Informes técnicos de errores y cierres inesperados en videojuegos de Steam</h4>
-         <p>Como excepción limitada a la ausencia general de sistemas de recopilación de información, el titular podrá habilitar en determinados videojuegos distribuidos mediante Steam funcionalidades específicas de recepción de informes técnicos de errores, fallos de funcionamiento o cierres inesperados (crash reports).</p>
-         <p>Esta funcionalidad tendrá como única finalidad:</p>
+         <h4 data-i18n="politicas.h4.seccion7">7. Informes técnicos de errores y cierres inesperados en videojuegos de Steam</h4>
+         <p data-i18n="politicas.p.s7p1">Como excepción limitada a la ausencia general de sistemas de recopilación de información, el titular podrá habilitar en determinados videojuegos distribuidos mediante Steam funcionalidades específicas de recepción de informes técnicos de errores, fallos de funcionamiento o cierres inesperados (crash reports).</p>
+         <p data-i18n="politicas.p.s7p2">Esta funcionalidad tendrá como única finalidad:</p>
          <ul>
-            <li>Detectar errores técnicos del videojuego.</li>
-            <li>Identificar las causas de cierres inesperados.</li>
-            <li>Analizar incompatibilidades y problemas de funcionamiento.</li>
-            <li>Reproducir errores para facilitar su corrección.</li>
-            <li>Mejorar la estabilidad y el correcto funcionamiento del videojuego.</li>
+            <li data-i18n="politicas.li.s7detectar">Detectar errores técnicos del videojuego.</li>
+            <li data-i18n="politicas.li.s7causas">Identificar las causas de cierres inesperados.</li>
+            <li data-i18n="politicas.li.s7incompatibilidades">Analizar incompatibilidades y problemas de funcionamiento.</li>
+            <li data-i18n="politicas.li.s7reproducir">Reproducir errores para facilitar su corrección.</li>
+            <li data-i18n="politicas.li.s7mejorar">Mejorar la estabilidad y el correcto funcionamiento del videojuego.</li>
          </ul>
-         <p>Cuando esta funcionalidad esté habilitada, los informes podrán contener exclusivamente la información técnica necesaria para diagnosticar los problemas, como mensajes de error, registros técnicos, versiones del videojuego, información del sistema operativo, datos de configuración técnica y, cuando resulte necesario, volcados de memoria o información técnica generada durante el fallo.</p>
-         <p>Estos informes podrán transmitirse mediante los servicios y herramientas de Steamworks y ponerse a disposición del titular a través de las herramientas de gestión para desarrolladores de Steam.</p>
-         <p>El titular utilizará la información recibida exclusivamente para analizar, diagnosticar y solucionar los problemas técnicos detectados. No se utilizará para publicidad, seguimiento comercial, elaboración de perfiles, identificación de usuarios ni comercialización de información personal.</p>
-         <p>Los informes estarán limitados a la información técnicamente necesaria. No se pretende recopilar deliberadamente archivos personales, documentos, fotografías, contraseñas ni contenidos privados del dispositivo del usuario.</p>
-         <p>Esta funcionalidad no se encuentra necesariamente habilitada en todos los videojuegos ni en todas sus versiones. Su utilización dependerá de que el mecanismo correspondiente se encuentre efectivamente incorporado y activado.</p>
-         <p>Los tratamientos que Valve realice directamente para la prestación de los servicios de Steam se regirán asimismo por sus propias condiciones y políticas de privacidad.</p>
+         <p data-i18n="politicas.p.s7p3">Cuando esta funcionalidad esté habilitada, los informes podrán contener exclusivamente la información técnica necesaria para diagnosticar los problemas, como mensajes de error, registros técnicos, versiones del videojuego, información del sistema operativo, datos de configuración técnica y, cuando resulte necesario, volcados de memoria o información técnica generada durante el fallo.</p>
+         <p data-i18n="politicas.p.s7p4">Estos informes podrán transmitirse mediante los servicios y herramientas de Steamworks y ponerse a disposición del titular a través de las herramientas de gestión para desarrolladores de Steam.</p>
+         <p data-i18n="politicas.p.s7p5">El titular utilizará la información recibida exclusivamente para analizar, diagnosticar y solucionar los problemas técnicos detectados. No se utilizará para publicidad, seguimiento comercial, elaboración de perfiles, identificación de usuarios ni comercialización de información personal.</p>
+         <p data-i18n="politicas.p.s7p6">Los informes están limitados a la información técnica necesaria. No se pretende recopilar deliberadamente archivos personales, documentos, fotografías, contraseñas ni contenidos privados del dispositivo del usuario.</p>
+         <p data-i18n="politicas.p.s7p7">Esta funcionalidad no se encuentra necesariamente habilitada en todos los videojuegos ni en todas sus versiones. Su utilización dependerá de que el mecanismo correspondiente se encuentre efectivamente incorporado y activado.</p>
+         <p data-i18n="politicas.p.s7p8">Los tratamientos que Valve realice directamente para la prestación de los servicios de Steam se regirán asimismo por sus propias condiciones y políticas de privacidad.</p>
 
-         <h4>8. Ausencia de publicidad y seguimiento comercial</h4>
-         <p>Los productos desarrollados por el titular no tienen como finalidad recopilar información personal para comercializarla, elaborar perfiles publicitarios o realizar seguimiento individualizado de sus usuarios.</p>
-         <p>El titular no comercializa, vende ni cede a terceros bases de datos personales obtenidas mediante el funcionamiento ordinario de sus aplicaciones o videojuegos.</p>
-         <p>Tampoco utiliza los datos técnicos que eventualmente puedan recibirse mediante los mecanismos de diagnóstico descritos en el apartado anterior para finalidades publicitarias o comerciales.</p>
+         <h4 data-i18n="politicas.h4.seccion8">8. Ausencia de publicidad y seguimiento comercial</h4>
+         <p data-i18n="politicas.p.s8p1">Los productos desarrollados por el titular no tienen como finalidad recopilar información personal para comercializarla, elaborar perfiles publicitarios o realizar seguimiento individualizado de sus usuarios.</p>
+         <p data-i18n="politicas.p.s8p2">El titular no comercializa, vende ni cede a terceros bases de datos personales obtenidas mediante el funcionamiento ordinario de sus aplicaciones o videojuegos.</p>
+         <p data-i18n="politicas.p.s8p3">Tampoco utiliza los datos técnicos que eventualmente puedan recibirse mediante los mecanismos de diagnóstico descritos en el apartado anterior para finalidades publicitarias o comerciales.</p>
 
-         <h4>9. Comunicaciones voluntarias con el desarrollador</h4>
-         <p>Si un usuario contacta voluntariamente con el titular mediante correo electrónico u otro medio externo a la aplicación, los datos que facilite serán utilizados exclusivamente para gestionar, atender y responder a dicha comunicación.</p>
-         <p>Este tratamiento se realizará conforme a la normativa de protección de datos aplicable.</p>
+         <h4 data-i18n="politicas.h4.seccion9">9. Comunicaciones voluntarias con el desarrollador</h4>
+         <p data-i18n="politicas.p.s9p1">Si un usuario contacta voluntariamente con el titular mediante correo electrónico u otro medio externo a la aplicación, los datos que facilite serán utilizados exclusivamente para gestionar, atender y responder a dicha comunicación.</p>
+         <p data-i18n="politicas.p.s9p2">Este tratamiento se realizará conforme a la normativa de protección de datos aplicable.</p>
 
-         <h4>10. Derechos de protección de datos</h4>
-         <p>En caso de que el titular realice algún tratamiento de datos personales, los interesados podrán ejercer los derechos reconocidos por la normativa aplicable, incluidos los derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad cuando resulten procedentes.</p>
-         <p>Las solicitudes podrán dirigirse al correo electrónico indicado en esta política.</p>
-         <p>Asimismo, los usuarios podrán presentar una reclamación ante la Agencia Española de Protección de Datos o la autoridad de control competente.</p>
-         <p>Los derechos relativos a tratamientos realizados de forma independiente por plataformas y proveedores externos deberán ejercerse directamente ante los respectivos responsables.</p>
+         <h4 data-i18n="politicas.h4.seccion10">10. Derechos de protección de datos</h4>
+         <p data-i18n="politicas.p.s10p1">En caso de que el titular realice algún tratamiento de datos personales, los interesados podrán ejercer los derechos reconocidos por la normativa aplicable, incluidos los derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad cuando resulten procedentes.</p>
+         <p data-i18n="politicas.p.s10p2">Las solicitudes podrán dirigirse al correo electrónico indicado en esta política.</p>
+         <p data-i18n="politicas.p.s10p3">Asimismo, los usuarios podrán presentar una reclamación ante la Agencia Española de Protección de Datos o la autoridad de control competente.</p>
+         <p data-i18n="politicas.p.s10p4">Los derechos relativos a tratamientos realizados de forma independiente por plataformas y proveedores externos deberán ejercerse directamente ante los respectivos responsables.</p>
 
-         <h4>11. Modificaciones, versiones y entrada en vigor de esta política</h4>
-         <p>La presente Política de Privacidad será publicada y mantenida exclusivamente en la página web oficial del titular, bajo su control y responsabilidad.</p>
-         <p>La página web oficial indicada en este documento constituirá la fuente de referencia para consultar la versión vigente de la política.</p>
-         <p>El titular no delegará en tiendas de aplicaciones, plataformas de distribución, proveedores tecnológicos ni páginas web externas la modificación o actualización del contenido de su Política de Privacidad.</p>
-         <p>Cuando resulte necesario modificar esta política, el titular publicará una nueva versión en su página web oficial, identificando expresamente:</p>
+         <h4 data-i18n="politicas.h4.seccion11">11. Modificaciones, versiones y entrada en vigor de esta política</h4>
+         <p data-i18n="politicas.p.s11p1">La presente Política de Privacidad será publicada y mantenida exclusivamente en la página web oficial del titular, bajo su control y responsabilidad.</p>
+         <p data-i18n="politicas.p.s11p2">La página web oficial indicada en este documento constituirá la fuente de referencia para consultar la versión vigente de la política.</p>
+         <p data-i18n="politicas.p.s11p3">El titular no delegará en tiendas de aplicaciones, plataformas de distribución, proveedores tecnológicos ni páginas web externas la modificación o actualización del contenido de su Política de Privacidad.</p>
+         <p data-i18n="politicas.p.s11p4">Cuando resulte necesario modificar esta política, el titular publicará una nueva versión en su página web oficial, identificando expresamente:</p>
          <ul>
-            <li>El número o identificador de la nueva versión.</li>
-            <li>La fecha de publicación de la modificación.</li>
-            <li>La fecha concreta a partir de la cual entrará en vigor.</li>
+            <li data-i18n="politicas.li.s11v">El número o identificador de la nueva versión.</li>
+            <li data-i18n="politicas.li.s11fecha">La fecha de publicación de la modificación.</li>
+            <li data-i18n="politicas.li.s11vigencia">La fecha concreta a partir de la cual entrará en vigor.</li>
          </ul>
-         <p>Cada versión anterior podrá conservarse en un histórico de versiones para permitir identificar las condiciones informativas que estaban publicadas en cada momento.</p>
-         <p>Las modificaciones no tendrán efectos retroactivos respecto de tratamientos realizados con anterioridad a su entrada en vigor.</p>
-         <p>La nueva versión será aplicable a los tratamientos efectuados a partir de la fecha de entrada en vigor indicada, yse applicaran a instalaciones posteriores o actualizaciones.</p>
-         <p>Cuando una modificación afecte sustancialmente a las finalidades o condiciones de un tratamiento de datos personales, el titular facilitará la información correspondiente por medios razonables y, cuando resulte legalmente necesario, solicitará el consentimiento del usuario antes de iniciar el nuevo tratamiento.</p>
-         <p>La descarga, instalación o actualización de una aplicación no se considerará por sí sola consentimiento para tratamientos de datos personales que legalmente requieran una aceptación específica.</p>
+         <p data-i18n="politicas.p.s11p5">Cada versión anterior podrá conservarse en un histórico de versiones para permitir identificar las condiciones informativas que estaban publicadas en cada momento.</p>
+         <p data-i18n="politicas.p.s11p6">Las modificaciones no tendrán efectos retroactivos respecto de tratamientos realizados con anterioridad a su entrada en vigor.</p>
+         <p data-i18n="politicas.p.s11p7">La nueva versión será aplicable a los tratamientos efectuados a partir de la fecha de entrada en vigor indicada, y se aplicará a instalaciones posteriores o actualizaciones.</p>
+         <p data-i18n="politicas.p.s11p8">Cuando una modificación afecte sustancialmente a las finalidades o condiciones de un tratamiento de datos personales, el titular facilitará la información correspondiente por medios razonables y, cuando resulte legalmente necesario, solicitará el consentimiento del usuario antes de iniciar el nuevo tratamiento.</p>
+         <p data-i18n="politicas.p.s11p9">La descarga, instalación o actualización de una aplicación no se considerará por sí sola consentimiento para tratamientos de datos personales que legalmente requieran una aceptación específica.</p>
 
-         <h4>12. Contacto</h4>
-         <p>Para cualquier consulta relacionada con esta Política de Privacidad o el tratamiento de datos personales por parte del titular:</p>
-         <ul class="politicas-meta">
-            <li>Desarrollador / Titular: mentalhelldev</li>
-            <li>Correo electrónico: superoad2001@gmail.com</li>
-            <li>Página web oficial: mentalhell.es</li>
+         <h4 data-i18n="politicas.h4.seccion12">12. Contacto</h4>
+         <p data-i18n="politicas.p.s12p1">Para cualquier consulta relacionada con esta Política de Privacidad o el tratamiento de datos personales por parte del titular:</p>
+          <ul class="politicas-meta">
+             <li data-i18n="politicas.li.contacto1">Desarrollador / Titular: mentalhelldev</li>
+             <li data-i18n="politicas.li.contacto2">Correo electrónico: superoad2001@gmail.com</li>
+             <li data-i18n="politicas.li.contacto3">Página web oficial: mentalhell.es</li>
          </ul>
 
-         <h3>DECLARACIÓN GENERAL DE PRIVACIDAD</h3>
-         <p>El titular mantiene como principio general el desarrollo de aplicaciones y videojuegos que no requieran la recopilación sistemática de información personal de sus usuarios.</p>
-         <p>No se utilizan sistemas propios de telemetría, seguimiento, analítica de usuarios o recopilación de información con fines comerciales o publicitarios.</p>
-         <p>La única excepción prevista en esta política consiste en la posible recepción limitada de informes técnicos de errores y fallos en determinados videojuegos distribuidos mediante Steam, cuando dicha funcionalidad se encuentre expresamente habilitada, y exclusivamente para diagnosticar y solucionar problemas técnicos.</p>
-         <p>Los tratamientos independientes realizados por los sistemas operativos y plataformas de distribución se rigen por las condiciones y políticas de sus respectivos proveedores, sin perjuicio de las responsabilidades propias que correspondan legalmente al titular.</p>
-
+         <h3 data-i18n="politicas.h3.declaracion">DECLARACIÓN GENERAL DE PRIVACIDAD</h3>
+         <p data-i18n="politicas.p.decl1">El titular mantiene como principio general el desarrollo de aplicaciones y videojuegos que no requieran la recopilación sistemática de información personal de sus usuarios.</p>
+         <p data-i18n="politicas.p.decl2">No se utilizan sistemas propios de telemetría, seguimiento, analítica de usuarios o recopilación de información con fines comerciales o publicitarios.</p>
+         <p data-i18n="politicas.p.decl3">La única excepción prevista en esta política consiste en la posible recepción limitada de informes técnicos de errores y fallos en determinados videojuegos distribuidos mediante Steam, cuando dicha funcionalidad se encuentre expresamente habilitada, y exclusivamente para diagnosticar y solucionar problemas técnicos.</p>
+         <p data-i18n="politicas.p.decl4">Los tratamientos independientes realizados por los sistemas operativos y plataformas de distribución se rigen por las condiciones y políticas de sus respectivos proveedores, sin perjuicio de las responsabilidades propias que correspondan legalmente al titular.</p>
+         <h3 data-i18n="politicas.h3.cookies">POLÍTICA DE COOKIES</h3>
+         <p data-i18n="politicas.p.cookies1">Este sitio web utiliza una única cookie propia y el almacenamiento local del navegador con la única finalidad de recordar el idioma seleccionado manualmente por el usuario.</p>
+         <p data-i18n="politicas.p.cookies2">Tanto la cookie como el almacenamiento local se generan únicamente cuando el usuario cambia voluntariamente el idioma mediante el selector disponible en la web. No se instalan ni se activan por el simple hecho de visitar o navegar por el sitio web.</p>
+         <p data-i18n="politicas.p.cookies3">Esta cookie tiene una finalidad exclusivamente funcional y no se utiliza para recopilar datos personales, realizar seguimiento, elaborar perfiles, mostrar publicidad ni analizar el comportamiento de los visitantes.</p>
+         <p data-i18n="politicas.p.cookies4">No se utilizan cookies analíticas, publicitarias ni de seguimiento de terceros.</p>
+         <p data-i18n="politicas.p.cookies5">Al tratarse de una cookie de personalización basada en una elección expresa del propio usuario, está exenta del requisito de consentimiento conforme a los criterios de la Agencia Española de Protección de Datos (AEPD).</p>
+         
       </div>
    </div>
 </div>
@@ -197,9 +212,9 @@
             <div class="footer"> 
                <div class="copyright">
                   <div class="container">
-                     <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">HTML Design</a>, 
-                        bajo licencia <a href="https://creativecommons.org">CC BY 4.0</a>. 
-                        Modificado por Serah Rodríguez Adell.
+                     <p><span data-i18n="footer.copyright1">Copyright 2019 All Rights Reserved By </span><a href="https://html.design/">HTML Design</a>, 
+                        <span data-i18n="footer.copyright2">bajo licencia </span><a href="https://creativecommons.org">CC BY 4.0</a>. 
+                        <span data-i18n="footer.copyright3">. Modificado por </span>Serah Rodríguez Adell.
                      </p>
                   </div>
                </div>
