@@ -563,7 +563,7 @@ button {
     margin-bottom: -1px;
     width: 100%;
     min-width: 100%;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .text-bg {
@@ -1520,17 +1520,32 @@ body {
 }
 
 @media (max-width: 767px) {
-    #langMenu {
-        position: static;
-        width: 100%;
-        border-radius: 0;
-        box-shadow: none;
-        border: none;
-        background: transparent;
-    }
     .lang-option {
         margin-bottom: 8px;
         border-radius: 999px;
+    }
+}
+
+/*---------------------------------------------------------------------
+    Navegacion principal - botones Inicio / Hardware / Contacto / Politicas
+---------------------------------------------------------------------*/
+
+.nav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .nav-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nav-actions .btn.btn-outline-light {
+        width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
 

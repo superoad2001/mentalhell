@@ -205,24 +205,24 @@ $(function () {
             /* alien1.html */
             "title.alien1": "LOST DARKNESS 1",
             "alien1.p.desc1": "LOST DARKNESS Episodio 1: Espacio Profundo seguir\u00e1 la aventura de regreso a casa de nuestro protagonista.",
-            "alien1.p.desc2": "En un universo al borde del colapso, tomar\u00e1s el control de un astr\u00f3nomo retirado",
-            "alien1.p.desc3": "Confiaste en la persona equivocada y ahora te persigue un cient\u00edfico genocida",
+            "alien1.p.desc2": "En un universo al borde del colapso, tomar\u00e1s el control de un astr\u00f3nomo retirado.",
+            "alien1.p.desc3": "Confiaste en la persona equivocada y ahora te persigue un cient\u00edfico genocida.",
             "alien1.p.desc4": "Por culpa de \u00e9l, quedas a la deriva en un asteroide donde se ubica un templo perteneciente a unas entidades arcanas",
-            "alien1.p.desc5": "pero tu \u00fanico objetivo ser\u00e1 salir de aqu\u00ed y volver a casa",
+            "alien1.p.desc5": "pero tu \u00fanico objetivo ser\u00e1 salir de aqu\u00ed y volver a casa.",
             "alien1.btn.atras": "Atr\u00e1s",
 
             /* alien2.html */
             "title.alien2": "LOST DARKNESS 2",
             "alien2.p.desc1": "La aventura de LOST DARKNESS Episodio 2: Regreso a casa continuar\u00e1 tras los eventos del episodio anterior.",
-            "alien2.p.desc2": "El alien ha vuelto a casa, pero ha aparecido una nueva amenaza: una compa\u00f1\u00eda de piratas ladrones ha invadido su mundo",
+            "alien2.p.desc2": "El alien ha vuelto a casa, pero ha aparecido una nueva amenaza: una compa\u00f1\u00eda de piratas ladrones ha invadido su mundo.",
             "alien2.p.desc3": "El alien y sus nuevos compa\u00f1eros buscar\u00e1n averiguar las intenciones de esta amenaza",
-            "alien2.p.desc4": "y finalmente encontrar a su familia, que est\u00e1 desaparecida",
+            "alien2.p.desc4": "y finalmente encontrar a su familia, que est\u00e1 desaparecida.",
             "alien2.btn.atras": "Atr\u00e1s",
 
             /* alien3.html */
             "title.alien3": "LOST DARKNESS 3",
             "alien3.p.desc1": "La aventura de LOST DARKNESS Episodio 3: Viaje del h\u00e9roe ocurrir\u00e1 10 a\u00f1os despu\u00e9s del episodio anterior.",
-            "alien3.p.desc2": "\u00bfEste pondr\u00e1 punto final a la historia de 3 episodios desvelando finalmente el misterio de los antiguos? Tal vez descubran un gran secreto, pero no es oro todo lo que reluce",
+            "alien3.p.desc2": "\u00bfEste pondr\u00e1 punto final a la historia de 3 episodios desvelando finalmente el misterio de los antiguos? Tal vez descubran un gran secreto, pero no es oro todo lo que reluce.",
             "alien3.p.desc3": "Tampoco es real todo lo que crees.",
             "alien3.btn.atras": "Atr\u00e1s",
 
@@ -354,6 +354,7 @@ $(function () {
             "tid.h3": "TID Activity Manager",
             "tid.p.desc": "Aplicaci\u00f3n para la gesti\u00f3n del sistema de personas con TID.",
             "tid.p.placeholder": "Es una herramienta muy completa para la gesti\u00f3n de actividades y horarios y la comunicaci\u00f3n, enfocada a personas con TID. El objetivo de esta app es mejorar su capacidad de gesti\u00f3n y darles facilidades para gestionar el d\u00eda, el mes y la semana, con una interfaz fluida y entendible que facilite la gesti\u00f3n, intentando que sea relajante y no demasiado estimulante.",
+            "tid.btn.proximamente": "Pr\u00f3ximamente",
 
             /* Footer */
             "footer.copyright1": "Copyright 2019 All Rights Reserved By ",
@@ -411,24 +412,24 @@ $(function () {
             /* alien1.html */
             "title.alien1": "LOST DARKNESS 1",
             "alien1.p.desc1": "LOST DARKNESS Episode 1: Deep Space will follow our protagonist's adventure back home.",
-            "alien1.p.desc2": "In a universe on the brink of collapse, you will take control of a retired astronomer",
-            "alien1.p.desc3": "You trusted the wrong person and now a genocidal scientist is hunting you",
+            "alien1.p.desc2": "In a universe on the brink of collapse, you will take control of a retired astronomer.",
+            "alien1.p.desc3": "You trusted the wrong person and now a genocidal scientist is hunting you.",
             "alien1.p.desc4": "Because of him, you are adrift on an asteroid where a temple belonging to arcane entities is located",
-            "alien1.p.desc5": "but your only goal will be to get out of here and return home",
+            "alien1.p.desc5": "but your only goal will be to get out of here and return home.",
             "alien1.btn.atras": "Back",
 
             /* alien2.html */
             "title.alien2": "LOST DARKNESS 2",
             "alien2.p.desc1": "The adventure of LOST DARKNESS Episode 2: Return Home will continue after the events of the previous episode.",
-            "alien2.p.desc2": "The alien has returned home, but a new threat has appeared: a company of thieving pirates has invaded his world",
+            "alien2.p.desc2": "The alien has returned home, but a new threat has appeared: a company of thieving pirates has invaded his world.",
             "alien2.p.desc3": "The alien and his new companions will try to find out the intentions of this threat",
-            "alien2.p.desc4": "and finally find his family, who is missing",
+            "alien2.p.desc4": "and finally find his family, who is missing.",
             "alien2.btn.atras": "Back",
 
             /* alien3.html */
             "title.alien3": "LOST DARKNESS 3",
             "alien3.p.desc1": "The adventure of LOST DARKNESS Episode 3: Hero's Journey will take place 10 years after the previous episode.",
-            "alien3.p.desc2": "Will this put an end to the 3-episode story by finally revealing the mystery of the ancients? Perhaps they will discover a great secret, but not all that glitters is gold",
+            "alien3.p.desc2": "Will this put an end to the 3-episode story by finally revealing the mystery of the ancients? Perhaps they will discover a great secret, but not all that glitters is gold.",
             "alien3.p.desc3": "Nor is everything you believe real.",
             "alien3.btn.atras": "Back",
 
@@ -560,6 +561,7 @@ $(function () {
             "tid.h3": "TID Activity Manager",
             "tid.p.desc": "Application for the management of the TID system.",
             "tid.p.placeholder": "It is a very complete tool for managing activities, schedules and communication, aimed at people with TID. The goal of this app is to improve their management skills and make it easier to manage the day, month and week, with a fluid and understandable interface that facilitates management, trying to make it relaxing and not too stimulating.",
+            "tid.btn.proximamente": "Coming soon",
 
             /* Footer */
             "footer.copyright1": "Copyright 2019 All Rights Reserved By ",
